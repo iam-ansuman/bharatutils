@@ -53,6 +53,7 @@ format_inr(50000000)       # '₹5.0 Cr'
 format_inr("15,00,000")    # '₹15.0 L'   — messy strings? handled
 format_inr(-750000)        # '-₹7.5 L'   — negatives? handled
 format_inr(float("nan"))   # 'N/A'       — pandas NaN? handled
+indian_commas(15000000)    # '1,50,00,000' — full Indian grouping
 ```
 
 Drop it straight into a pandas pipeline on 100,000 dirty rows. It won't flinch.
