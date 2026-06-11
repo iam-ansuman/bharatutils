@@ -1,6 +1,6 @@
 """bharatutils - Python utilities for Indian developers."""
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 from .number_format import to_lakh, to_crore, format_inr
 from .gst import validate_gstin, validate_gstin_strict, parse_gstin
